@@ -1,0 +1,18 @@
+#define<stdio.h>
+#define<math.h>
+#define<string.h>
+#define<stdlib.h>
+int main(){
+{ int i,j,n,k;
+  printf("请输入n(1≤n≤26)的值:"); 
+  scanf("%d",&n); 
+  for (i=1;i<=n;i++) 
+  {  for (k=1;k<=n-i;k++) 
+        printf("* ");
+     for (j=1;j<=2*i-1;j++) 
+        printf("%c",i+64);       
+     printf("\n");     
+  }
+  return 0;
+}
+  
