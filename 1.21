@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{double  a,b,c,area,p;
+ printf("请输入三角形的三边边长a,b,c：");
+ scanf("%lf %lf %lf",&a,&b,&c);
+ if (a>0&&b>0&&c>0){
+   if(a+b>c&&a+c>b&&c+b>a&&a-b>c&&a-b>c&&a-c>b){
+   
+ p=1.0/2.0*(a+b+c);
+ area=sqrt(p*(p-a)*(p-b)*(p-c));
+ printf("三角形的面积是：%.2lf",area);}
+ else {
+ printf("构不成三角形；请重新输入三角形的三边边长a,b,c");
+ scanf("%lf %lf %lf",&a,&b,&c);
+ p=1.0/2.0*(a+b+c);
+ area=sqrt(p*(p-a)*(p-b)*(p-c));
+ printf("三角形的面积是：%.2lf",area);}}
+ else{
+ printf("构不成三角形；请重新输入三角形的三边边长a,b,c");
+ scanf("%lf %lf %lf",&a,&b,&c);
+ p=1.0/2.0*(a+b+c);
+ area=sqrt(p*(p-a)*(p-b)*(p-c));
+ printf("三角形的面积是：%.2lf",area);}
+ return 0;
+}
